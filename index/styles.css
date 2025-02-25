@@ -5,3 +5,26 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
 }
+
+@keyframes banner {
+
+   0% {
+    background-position: 0% 50%;
+   }
+
+   50% {
+    background-position: 50% 50%;
+   }
+    
+   100% {
+    background-position: 100% 50%;
+   }
+}
+
+.nav-header {
+    height: 60px;
+    animation: banner 5s infinite linear;
+    size: 300% 100%;
+    background: linear-gradient(90deg, black, red, black);
+    background-repeat: no-repeat;
+}
