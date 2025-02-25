@@ -4,27 +4,68 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
+    color: white;
+
 }
 
-@keyframes banner {
-
-   0% {
-    background-position: 0% 50%;
-   }
-
-   50% {
-    background-position: 50% 50%;
-   }
-    
-   100% {
-    background-position: 100% 50%;
-   }
+body {
+    background-color: black;
 }
+
+
+section {
+
+    height: 1000px;
+}
+
+
 
 .nav-header {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
     height: 60px;
-    animation: banner 5s infinite linear;
-    size: 300% 100%;
-    background: linear-gradient(90deg, black, red, black);
-    background-repeat: no-repeat;
+    background-color: #14213d;
+    width: 100vw;
+}
+
+.heading {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #fca311;
+}
+
+
+@keyframes typer {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+    
+
+
+.typer {
+    position: absolute;
+    background-color: #e5e5e5;
+    height: 4rem;
+    width: 1rem;
+    right: 34%;
+    animation: typer 2s infinite;
+    border-radius: 2px;
 }
